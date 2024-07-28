@@ -14,13 +14,21 @@ plant_no_gui.py - завод
 
 ![sc](https://github.com/user-attachments/assets/a7e163be-d54e-4156-a813-09a6bb5eea7a)
 
-
-### Если нужно протестировать логику размещения заказов/выполнения отгрузок, которая прописана в excel файле, то используется файл:
-
-coord_no_gui_excel.py
+Финансовый параметры:
+```
+self.ret.holdingrate = 4
+self.ret.backlograte = 10 
+self.distr.holdingrate = 2
+self.distr.backlograte = 4
+self.whole.holdingrate = 2
+self.whole.backlograte = 4
+self.plant.holdingrate_raw = 1
+self.plant.holdingrate_finished = 2
+self.plant.backlograte = 4
+self.plant.productiontime = 2
+```
 
 Начальный уровень запасов:
-
 ```
 self.ret.inventory = 20
 self.distr.inventory = 20
@@ -28,6 +36,10 @@ self.whole.inventory = 20
 self.plant.inventory_raw = 25
 self.plant.inventory_finished = 20
 ```
+
+### Если нужно протестировать логику размещения заказов/выполнения отгрузок, которая прописана в excel файле, то используется файл:
+
+coord_no_gui_excel.py
 
 Excel файл с примером
 
