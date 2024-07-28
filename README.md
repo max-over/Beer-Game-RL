@@ -14,7 +14,7 @@
 
 ![sc](https://github.com/user-attachments/assets/a7e163be-d54e-4156-a813-09a6bb5eea7a)
 
-Финансовый параметры:
+Финансовые параметры:
 ```
 self.ret.holdingrate = 4
 self.ret.backlograte = 10 
