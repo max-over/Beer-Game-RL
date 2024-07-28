@@ -41,7 +41,7 @@ self.plant.inventory_finished = 20
 
 **coord_no_gui_excel.py**
 
-Excel файл с примером
+Excel файл с примером:
 
 **example2.xls**
 
