@@ -18,3 +18,14 @@ Excel файл с примером
 example2.xls
 
 # Если нужно протестировать простую политику управления запасами:
+
+coord_no_gui_ts.py - файл со стохастическим спросом. В примере используется равномеоное распределение спроса от 8 до 12 ret.current_demand = int(random.uniform(8, 12))
+
+Базовые уровни запаса:
+```
+ret.targetstock = 20
+distr.targetstock = 20
+whole.targetstock = 20
+plant.targetstock_raw = 20
+plant.targetstock_finished = 20
+```
