@@ -19,6 +19,16 @@ plant_no_gui.py - завод
 
 coord_no_gui_excel.py
 
+Начальный уровень запасов:
+
+```
+self.ret.inventory = 20
+self.distr.inventory = 20
+self.whole.inventory = 20
+self.plant.inventory_raw = 25
+self.plant.inventory_finished = 20
+```
+
 Excel файл с примером
 
 example2.xls
