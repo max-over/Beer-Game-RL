@@ -5,7 +5,7 @@
 
 **distr_no_gui.py** - дистрибьютор
 
-**whole_no_gui.py **- оптовик
+**whole_no_gui.py**- оптовик
 
 **plant_no_gui.py** - завод
 
