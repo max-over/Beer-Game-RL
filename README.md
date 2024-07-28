@@ -25,6 +25,11 @@ coord_no_gui_ts.py - файл со стохастическим спросом (
 ret.current_demand = int(random.uniform(8, 12))
 ```
 
+Пример для расчета заказа ритейлера (у других звеньев по аналогии - сравнивается целевой и текущий уровень запаса):
+```
+ret_order = max(ret.targetstock - ret.inventory, 0)
+```
+
 Базовые уровни запаса:
 ```
 ret.targetstock = 20
