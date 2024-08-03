@@ -1,3 +1,14 @@
 {
-"isGitignoreExtActive": true,
+  "isGitignoreExtActive": true,
+  "cSpell.words": [
+    "backlograte",
+    "backlogtotal",
+    "holdingrate",
+    "joblib",
+    "leadtimeup",
+    "optuna",
+    "productiontime",
+    "targetstock",
+    "totalcosts"
+  ]
 }
