@@ -7,7 +7,7 @@ class Distributor:
         self.current_period = 0
         self.current_demand = 0
         self.inventory = 0
-        self.leadtimeup = 0
+        self.leadtimeup = 2
         self.leadtimedown = 2
         self.sl = 1.00
         self.costs = 0

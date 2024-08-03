@@ -12,7 +12,7 @@ class Plant:
         self.current_demand = 0
         self.inventory_raw = 0
         self.inventory_finished = 0
-        self.leadtimeup = 0
+        self.leadtimeup = 2
         self.sl = 1.00
         self.costs = 0
         self.backlog = 0
