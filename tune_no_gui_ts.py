@@ -20,6 +20,14 @@ test_parameters = {
     'plant.targetstock_finished': 20
 }
 
+tuned_parameters = {
+    'ret.targetstock': 9,
+    'distr.targetstock': 9,
+    'whole.targetstock': 19,
+    'plant.targetstock_raw': 9,
+    'plant.targetstock_finished': 33
+}
+
 
 def run_simulation(parameters, trace=False):
     ret = ret_no_gui.Retailer()
@@ -213,7 +221,9 @@ if __name__ == "__main__":
     study.optimize(objective, n_trials=n_trials)
     print(study.best_value, study.best_params)
 
-    optuna.visualization.plot_optimization_history(study)
+# print(run_simulation(test_parameters, False))
+# print(run_simulation(tuned_parameters, False))
+#    optuna.visualization.plot_optimization_history(study)
     run_server(storage, host="localhost", port=8080)
 
 
