@@ -924,7 +924,7 @@ totalcosts += retailer.get(0).periodcosts + distributor.get(0).periodcosts + who
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
 						</InitialValue>
@@ -987,7 +987,7 @@ totalcosts += retailer.get(0).periodcosts + distributor.get(0).periodcosts + who
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -1205,7 +1205,7 @@ update_inventory_shipment();
 }
 update_costs();
 update_backlog_and_inventory_demand();
-sl = 1 - backlogcount/current_demand;]]></Body>
+sl = 1 - backlogcount/current_period;]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
@@ -1437,7 +1437,7 @@ periodcosts = inventory * holdingrate + backlog * backlograte;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
 						</InitialValue>
@@ -1500,7 +1500,7 @@ periodcosts = inventory * holdingrate + backlog * backlograte;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -1961,7 +1961,7 @@ sl = 1 - backlogcount/current_period;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
 						</InitialValue>
@@ -2024,7 +2024,7 @@ sl = 1 - backlogcount/current_period;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -2497,7 +2497,7 @@ sl = 1 - backlogcount/current_period;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
 						</InitialValue>
@@ -2560,7 +2560,7 @@ sl = 1 - backlogcount/current_period;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -2980,7 +2980,7 @@ while (e.hasNext()) {
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[production = min(production,inventory_raw);
 inventory_raw -= production;
-production_plant_queue.add(new InventoryShipment(production,current_period + productiontime));
+production_plant_queue.add(new InventoryShipment(production,(int)current_period + productiontime));
 ]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
@@ -3035,7 +3035,7 @@ sl = 1 - backlogcount/current_period;
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[shipment_plant_queue.add(new InventoryShipment(prod_order,current_period));
+					<Body><![CDATA[shipment_plant_queue.add(new InventoryShipment(prod_order,(int)current_period));
 ]]></Body>
 				</Function>
 			</Functions>
