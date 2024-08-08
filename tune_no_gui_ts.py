@@ -218,7 +218,7 @@ if __name__ == "__main__":
         pruner=optuna.pruners.SuccessiveHalvingPruner()
     )
 
-    study.optimize(objective, n_trials=n_trials)
+    study.optimize(objective, n_trials=n_trials, n_jobs=n_jobs)
     print(study.best_value, study.best_params)
 
 # print(run_simulation(test_parameters, False))
