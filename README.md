@@ -17,7 +17,7 @@
 Финансовые параметры:
 ```
 self.ret.holdingrate = 4
-self.ret.backlograte = 10 
+self.ret.backlograte = 10 (1000 for model training)
 self.distr.holdingrate = 2
 self.distr.backlograte = 4
 self.whole.holdingrate = 2
@@ -33,7 +33,7 @@ self.plant.productiontime = 2
 self.ret.inventory = 20
 self.distr.inventory = 20
 self.whole.inventory = 20
-self.plant.inventory_raw = 25
+self.plant.inventory_raw = 20
 self.plant.inventory_finished = 20
 ```
 
