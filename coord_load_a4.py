@@ -12,7 +12,7 @@ model = RecurrentPPO.load(models_path, env=vec_env)
 vec_env = model.get_env()
 obs = vec_env.reset()
 
-mean_reward, std_reward = evaluate_policy(model, vec_env, n_eval_episodes=3)
+mean_reward, std_reward = evaluate_policy(model, vec_env, n_eval_episodes=20)
 print(f"mean_reward:{mean_reward:.2f} +/- {std_reward:.2f}")
 
 
