@@ -81,10 +81,22 @@ At initialization the basic parameters of the system are defined. The ```reset()
 
 # Pretrained models (1 action - only Retailer's orders with RL, 2 actions - Retailer's order and Distributor's order with RL, etc):
 
-**a4e8.zip** - a model for four actions and a state space of eight parameters
+**model_a4.zip** - a model for four actions and a state space of eight parameters
 
-**a3e8.zip** - a model for three actions and a state space of eight parameters
+**model_a3.zip** - a model for three actions and a state space of eight parameters
 
-**a2e8.zip** - a model for two actions and a state space of eight parameters
+**model_a2.zip** - a model for two actions and a state space of eight parameters
 
-**a1e8.zip** - a model for one action and a state space of eight parameters
+**model_a1.zip** - a model for one action and a state space of eight parameters
+
+
+# Pretrained models for different supply chain echelons (1 action i all models):
+
+**model_a1.zip** - a model for one action and a state space of eight parameters (Retailer)
+
+**model_a1d.zip** - a model for one action and a state space of eight parameters (Distributor)
+
+**model_a1w.zip** - a model for one action and a state space of eight parameters (Wholesaler)
+
+**model_a1p.zip** - a model for one action and a state space of eight parameters (Plant)
+
