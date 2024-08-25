@@ -98,6 +98,8 @@ At initialization the basic parameters of the system are defined. The ```reset()
 
 **model_a1w.zip** - a model for one action and a state space of eight parameters (Wholesaler)
 
+**model_a1p.zip** - a model for one action and a state space of eight parameters (Plant)
+
 
 # Order-Up-To tuning in optuna:
 
@@ -105,5 +107,4 @@ At initialization the basic parameters of the system are defined. The ```reset()
 
 
 
-**model_a1p.zip** - a model for one action and a state space of eight parameters (Plant)
 
