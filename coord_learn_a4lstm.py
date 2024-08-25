@@ -30,7 +30,7 @@ while iters < iter_max:
     iters += 1
     model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name="RPPO")
     model.save(f"{models_dir}/{TIMESTEPS*iters}")
-    mean_reward, std_reward = evaluate_policy(model, vec_env, n_eval_episodes=3)
+    mean_reward, std_reward = evaluate_policy(model, vec_env, n_eval_episodes=20)
     print(f"mean_reward:{mean_reward:.2f} +/- {std_reward:.2f}")
 
 
