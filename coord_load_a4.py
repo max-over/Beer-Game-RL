@@ -6,6 +6,7 @@ from BG_RL_a4_obs8_env import BeerGameEnv
 
 vec_env = BeerGameEnv()
 
+#model path is an example
 models_path = "E:/SC_Beer_Game_Python-main/SC_Beer_Game_Python-main/models/1721960641/900000.zip"
 model = RecurrentPPO.load(models_path, env=vec_env)
 
