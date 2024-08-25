@@ -36,7 +36,7 @@ def run_simulation(parameters, trace=False):
     plant = plant_no_gui.Plant()
 
     ret.holdingrate = 4
-    ret.backlograte = 1000
+    ret.backlograte = 3000
     ret.leadtimeup = 2
     ret.inventory = 20
 
