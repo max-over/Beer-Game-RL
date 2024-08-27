@@ -9,7 +9,7 @@
 
 **plant_no_gui.py** - plant
 
-The main difference to the classical version: the role of the plant consists of two actions: raw materail order (2 periods lead time, inventory: ```plant.inventory_raw```) then finished goods are produced from the raw materials  (2 periods production time, inventory: ```plant.inventory_finished```)
+The main difference to the classical version: the role of the plant consists of two actions: raw materail order (2 periods lead time, inventory: ```plant.inventory_raw```) then finished goods are produced from the raw materials  (2 periods production time, inventory: ```plant.inventory_finished```).
 All lead times and production times are equal to two game periods (steps). Order information exchange: instantenious
 
 ![sc](https://github.com/user-attachments/assets/a7e163be-d54e-4156-a813-09a6bb5eea7a)
