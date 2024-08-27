@@ -41,7 +41,7 @@ self.plant.inventory_finished = 20
 
 **coord_no_gui_excel.py**
 
-sample Excel file with demand, order plan and shipments:
+Sample Excel file with demand, order plan and shipments:
 
 **example2.xls**
 
