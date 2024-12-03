@@ -90,7 +90,7 @@ At initialization the basic parameters of the system are defined. The ```reset()
 **model_a1.zip** - a model for one action and a state space of eight parameters
 
 
-# Pretrained models for different supply chain echelons (1 action i all models):
+# Pretrained models for different supply chain echelons (1 action in all models):
 
 **model_a1.zip** - a model for one action and a state space of eight parameters (Retailer)
 
